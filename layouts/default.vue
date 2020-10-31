@@ -2,8 +2,8 @@
   <div class="app-layout">
     <div class="sidebar">
       <p>チャンネル一覧</p>
-      <p v-for="channel in channels" :key="channel.name">
-        <nuxt-link :to="'/channels/${channles.id}'">
+      <p v-for="channel in channels" :key="channel">
+        <nuxt-link :to="`/channels/${channel.id}`">
           {{ channel.name }}</nuxt-link
         >
       </p>
